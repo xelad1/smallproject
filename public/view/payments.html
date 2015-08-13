@@ -1,0 +1,50 @@
+<h1>Plastiq</h1>
+
+<div>
+
+  <div class="ui center aligned grid">
+    
+    <div class="ui buttons">
+      <button class="ui button" ng-click="selectBusiness()">Business</button>
+      <button class="ui button arrow" ng-click="selectPerson()">Person</button>
+    </div>
+
+    <div class="ui input">
+      <input id="businessID" type="text" ng-autocomplete ng-model="autocomplete">
+    </div>
+
+
+    <div class="submit">
+      <button class="ui button" id="submit" ng-click="submit()">
+        <i class="arrow right icon"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="search"></div>
+
+  <div class="payments">
+    
+  </div>
+
+</div>
+
+<!-- <div class="templateContainer">
+  <div class="template" ng-include="template.url"></div>
+</div>
+ -->
+
+<div class="ui center aligned grid" id="customer">
+ <div class="ui small image">
+  <svg width="150" height="150">
+    <image xmlns:xlink="http://financesonline.com/uploads/thumbnail-logo-info.jpg" xlink:href="/images/thumbnail-logo-info.jpg" x="0" y="0" width="100%" height="100%"></image>
+  </svg>
+</div>
+  <div class="BusinessName" id="name">{{businessID}}</div>
+  <div class="Address" id="address">{{address}}</div>
+  <button class="ui icon button" id="hoverbox">
+    <i class="dollar icon"></i>
+  </button>
+</div>
+
