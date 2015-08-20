@@ -1,6 +1,6 @@
 angular.module('payment-App.payments',['ngAutocomplete'])
 
-  .controller('paymentController', function($scope, $templateRequest/*, $cookieStore*/) {
+  .controller('paymentController', function($scope) {
     
     $scope.businessID;
     $scope.address;
