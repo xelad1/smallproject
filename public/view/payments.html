@@ -1,50 +1,73 @@
-<h1>Plastiq</h1>
+<h1></h1>
+
+<section ng-controller="paymentController">
+
 
 <div>
-
-  <div class="ui center aligned grid">
+  
+  <div class="ui center aligned grid" id="navbar">
     
-    <div class="ui buttons">
-      <button class="ui button" ng-click="selectBusiness()">Business</button>
-      <button class="ui button arrow" ng-click="selectPerson()">Person</button>
+    <div class="bar">
+
+    <div class="something">
+      
+      <div class="ui input" ng-keypress="submit()" id="input">
+      <button class="left attached blue ui button submit" ng-click="selectBusiness()" id="selectBusiness">Business</button>
+      <button class="left attached ui button submit" ng-click="selectPerson()" id="selectPerson">Person</button>
+        <input id="businessID" type="text" ng-autocomplete ng-model="autocomplete" placeholder="What business do you want to pay by card?">
+        <button class="right attached blue ui button" id="submit" ng-click="addPayee()">
+          <i class="arrow right icon arrow"></i>
+      </div>
+
     </div>
-
-    <div class="ui input">
-      <input id="businessID" type="text" ng-autocomplete ng-model="autocomplete">
     </div>
-
-
-    <div class="submit">
-      <button class="ui button" id="submit" ng-click="submit()">
-        <i class="arrow right icon"></i>
-      </button>
-    </div>
-
   </div>
 
-  <div class="search"></div>
-
-  <div class="payments">
-    
+  <div ng-repeat="payee in payees" my-payee="payee">
+    <div class="ui two column stackable grid" id="grid">
+      <div class="three column row payment">
+        <div class="column">
+          <div class="noborder ui segment">
+            <img class="ui right floated image unique" src="http://slco.org/recreation/dimpledell/youthSports/images/football_large.jpg" id="image">
+          </div>
+        </div>
+        <div class="column address" id="textbox">
+          <div class="noborder ui segment vert"><h2>{{payee.businessID}}</h2>
+          <span class="address" id="address">{{payee.address}}</span></div>
+        </div>
+        <div class="column">
+          <div class="noborder ui segment">
+              <button class="right attached ui icon button hoverbox">
+                <i class="ui centered huge dollar icon"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>  
   </div>
 
+  <div ng-repeat="people in people" my-payee="people">
+    <div class="ui two column stackable grid" id="grid">
+      <div class="three column row payment">
+        <div class="column">
+          <div class="noborder ui segment">
+            <img class="ui right floated image unique" src="http://slco.org/recreation/dimpledell/youthSports/images/football_large.jpg" id="image">
+          </div>
+        </div>
+        <div class="column address" id="textbox">        
+          <div class="noborder ui segment vert"><h2>{{people.businessID}}</h2>
+          <span class="address" id="address">{{people.address}}</span></div>
+        </div>
+        <div class="column">
+          <div class="noborder ui segment">
+              <!-- <button class="right attached blue ui icon button hoverbox">
+                <i class="ui centered huge dollar icon"></i>
+              </button> -->
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
 </div>
 
-<!-- <div class="templateContainer">
-  <div class="template" ng-include="template.url"></div>
-</div>
- -->
-
-<div class="ui center aligned grid" id="customer">
- <div class="ui small image">
-  <svg width="150" height="150">
-    <image xmlns:xlink="http://financesonline.com/uploads/thumbnail-logo-info.jpg" xlink:href="/images/thumbnail-logo-info.jpg" x="0" y="0" width="100%" height="100%"></image>
-  </svg>
-</div>
-  <div class="BusinessName" id="name">{{businessID}}</div>
-  <div class="Address" id="address">{{address}}</div>
-  <button class="ui icon button" id="hoverbox">
-    <i class="dollar icon"></i>
-  </button>
-</div>
-
+</section>

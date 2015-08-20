@@ -1,5 +1,116 @@
-#customer {
+* {
+  font-family: museo-slab;
+}
 
-    position: relative;
-    top: 100px;
+#navbar {
+  padding-bottom: 68px;
+  padding-top: 57px;
+ }
+
+
+#input {
+  position: relative;
+  width: 950px;
+}
+
+#arrow {
+  position: relative;
+}
+
+#payee
+ {
+  position: relative;
+  top: 180px;
+  right: -538px;
+  height: 90px;
+  width: 817px;
+  padding: 50px;
+  color: black;
+}
+
+.hoverbox {
+  text-align: center !important;
+  height: 100px;
+  width: 100px;
+}
+
+.hoverbox:hover {
+  background-color: #00a1e1 !important;
+}
+
+.dollar {
+  right: -7px;
+  color: white;
+}
+
+.vert {
+  margin-top: 15px !important;
+}
+
+.unique {
+  height: 100px;
+  width: 100px;
+ /* top: -88px;
+  left: -150px;*/
+}
+
+#submit {
+  width: 68px;
+  height: 45px;
+}
+
+.noborder {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.address {
+  display: block;
+}
+
+#address {
+  color: #D0D0D0;
+}
+
+.submit {
+  width: 106px;
+  text-align: center !important;
+}
+
+.ui.right.attached.button {
+  text-align: center !important;
+  font-family: museo-slab !important;
+}
+
+h2 {
+  height: 15px !important;
+  font-family: museo-slab !important;
+}
+
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+div.three.column.row.payment {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+/*div.column.address {
+
+  width: 100px !important;
+}
+
+//320.984px x 128px*/
+
+#textbox {
+  /*position: relative;*/
+  width: 500px !important;
+  /*right: -200px !important;*/
+}
+
+#grid {
+  position: relative;
+  right: -65px;
 }
