@@ -3,7 +3,8 @@ var paymentApp = angular.module('payment-App',
   [
   'ui.router',
   'payment-App.payments',
-  '720kb.tooltips'
+  '720kb.tooltips',
+  'ngAnimate'
   ])
 
 .config(function($stateProvider, $urlRouterProvider) {
