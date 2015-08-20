@@ -40,6 +40,7 @@ angular.module('payment-App.payments',['ngAutocomplete'])
       $scope.isBusiness = false;
       document.getElementById("selectBusiness").className = "left attached ui button submit";
       document.getElementById("selectPerson").className = "left attached blue ui button submit";
+      
     }
 
 })
