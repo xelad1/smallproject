@@ -1,6 +1,6 @@
 angular.module('payment-App.payments',['ngAutocomplete', 'ngAnimate'])
 
-  .controller('paymentController', function($scope, $q) {
+  .controller('paymentController', function($scope) {
     
     $scope.businessID;
     $scope.address;
