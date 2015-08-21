@@ -1,11 +1,11 @@
-angular.module('payment-App.payments',['ngAutocomplete'])
+angular.module('payment-App.payments',['ngAutocomplete', 'ngAnimate'])
 
-  .controller('paymentController', function($scope) {
+  .controller('paymentController', function($scope, $q) {
     
     $scope.businessID;
     $scope.address;
     $scope.isBusiness = true;
-    $scope.payees = []; submit
+    $scope.payees = [];
     $scope.people = [];
 
     $scope.newPayee = function () {
@@ -56,32 +56,3 @@ angular.module('payment-App.payments',['ngAutocomplete'])
     }
   }
 })
-
-   // return {
-   //              restrict: 'A',
-   //              template: '<div>{{aCard.name}} {{aCard.phone}}</div>',
-   //              replace: true,
-   //              transclude: false,
-   //              scope: {
-   //                  aCard: '=myCard'
-   //              }
-
-//set up navbar for completing google searches
-
-// </div>
-//   <div class="BusinessName" id="name">{{businessID}}</div>
-//   <div class="Address" id="address">{{address}}</div>
-//   <button class="ui icon button" id="hoverbox">
-//     <i class="dollar icon"></i>
-//   </button>
-// </div>
-  // .directive("topbar", function($compile, $templateRequest){
-  // return function(scope, element, attrs){
-  //   element.bind("click", function(){
-  //     $templateRequest("templates/businessTemplate.html").then(function(html){
-  //     var template = angular.element(html);
-  //     element.append(template);
-  //     $compile(template)(scope);
-  //  });
-  //   });
-  // };

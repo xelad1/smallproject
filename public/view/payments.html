@@ -14,7 +14,7 @@
       <div class="ui input" ng-keypress="submit()" id="input">
       <button class="left attached blue ui button submit" ng-click="selectBusiness()" id="selectBusiness">Business</button>
       <button class="left attached ui button submit" ng-click="selectPerson()" id="selectPerson">Person</button>
-        <input id="businessID" type="text" ng-autocomplete ng-model="autocomplete" placeholder="What business do you want to pay by card?">
+        <input id="businessID" type="text" ng-autocomplete="off" ng-model="autocomplete" placeholder="What business do you want to pay by card?">
         <button class="right attached blue ui button" id="submit" ng-click="addPayee()">
           <i class="arrow right icon arrow"></i>
       </div>
@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <div ng-repeat="payee in payees" my-payee="payee" ng-animate=>
+  <div ng-repeat="payee in payees" my-payee="payee" class="payment">
     <div class="ui two column stackable grid" id="grid">
       <div class="three column row payment">
         <div class="column">
@@ -58,7 +58,7 @@
         </div>
         <div class="column address" id="textbox">        
           <div class="noborder ui segment vert"><h2>{{people.businessID}}</h2>
-          <span class="address" id="address">{{people.address}}</span></div>
+          <span class="address" id="address">Address not provided</span></div>
         </div>
         <div class="column">
           <div class="noborder ui segment">
