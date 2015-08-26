@@ -1,4 +1,4 @@
-angular.module('payment-App.payments',['ngAutocomplete', 'ngAnimate'])
+angular.module('payment-App.payments',['ngAutocomplete', 'ngFx', 'ngAnimate'])
 
   .controller('paymentController', function($scope) {
     

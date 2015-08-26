@@ -8,7 +8,6 @@ var paymentApp = angular.module('payment-App',
 
 .config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/payments')
-  // Now set up the states
 
   $stateProvider
     .state('payments', {
