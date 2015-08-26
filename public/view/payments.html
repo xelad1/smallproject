@@ -28,11 +28,7 @@
     </div>
   </div>
 
- <ul>
-  <li ng-repeat="payee in payees" class="fx-rotate-clock">{{payee.businessID}}</li>
- </ul>
-
-  <div ng-repeat="payee in payees" my-payee="payee" class="fx-zoom-left fx-speed-1000 fx-easing-elastic">
+  <div ng-repeat="payee in payees" my-payee="payee" class="animated bounceInDown">
     <div class="ui two column stackable grid" id="grid">
       <div class="three column row payment">
         <div class="column">
