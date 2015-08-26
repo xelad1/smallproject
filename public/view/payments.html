@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div ng-repeat="payee in payees" my-payee="payee" class="animated bounceInDown">
+  <div ng-repeat="payee in payees" my-payee="payee" class="animated fadeInLeft">
     <div class="ui two column stackable grid" id="grid">
       <div class="three column row payment">
         <div class="column">
@@ -53,7 +53,7 @@
     </div>  
   </div>
 
-  <div ng-repeat="people in people" my-payee="people">
+  <div ng-repeat="people in people" my-payee="people" class="animated fadeInLeft">
     <div class="ui two column stackable grid" id="grid">
       <div class="three column row payment">
         <div class="column">
@@ -67,9 +67,6 @@
         </div>
         <div class="column">
           <div class="noborder ui segment">
-              <!-- <button class="right attached blue ui icon button hoverbox">
-                <i class="ui centered huge dollar icon"></i>
-              </button> -->
           </div>
         </div>
       </div>
