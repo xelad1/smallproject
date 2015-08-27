@@ -4,9 +4,27 @@ angular.module('payment-App.payments',['ngAutocomplete', 'ngFx', 'ngAnimate'])
     
     $scope.businessID;
     $scope.address;
-    $scope.isBusiness = true;
     $scope.payees = [];
     $scope.people = [];
+
+
+})
+  
+  .directive("ngFinder", function(){
+  return {
+    restrict: "A",
+    templateUrl: 'templates/finder.html',
+    scope: {
+      payees: '=ngPayees',
+      people: '=ngPeople'
+    },
+
+    //look up link property of directives args
+    link: function($scope, el, attributes) {
+
+    //was not accessible in controller (why?????)
+    $scope.isBusiness = true;
+
 
     $scope.newPayee = function () {
       this.businessID = $scope.businessID;
@@ -39,20 +57,19 @@ angular.module('payment-App.payments',['ngAutocomplete', 'ngFx', 'ngAnimate'])
     $scope.selectPerson = function () {
       $scope.isBusiness = false;
       document.getElementById("selectBusiness").className = "left attached ui button submit";
-      document.getElementById("selectPerson").className = "left attached blue ui button submit";
-      
+      document.getElementById("selectPerson").className = "left attached blue ui button submit"; 
     }
 
-})
-  
-  .directive("topbar", function(){
-  return {
-    restrict: "A",
-    templateUrl: '<div>{{aCard.businessID}} {{aCard.address}}</div>',
-    replace: true,
-    transclude: false,
-    scope: {
-      businessID: '=topbar'
-    }
+  }
+    
+
+
+
   }
 })
+
+//Notes:
+//Make pixel perfect to psd (use Photoshop here)
+//Add in proper fonts
+//Write custom angular autocomplete directive
+

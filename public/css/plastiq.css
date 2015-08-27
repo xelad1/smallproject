@@ -50,8 +50,6 @@
 .unique {
   height: 100px;
   width: 100px;
- /* top: -88px;
-  left: -150px;*/
 }
 
 #submit {
@@ -95,14 +93,8 @@ h2 {
 div.three.column.row.payment {
   padding-bottom: 8px;
   padding-top: 8px;
+  width: 500px !important:;
 }
-
-/*div.column.address {
-
-  width: 100px !important;
-}
-
-//320.984px x 128px*/
 
 #textbox {
   /*position: relative;*/
@@ -114,6 +106,9 @@ div.three.column.row.payment {
   position: relative;
   right: -65px;
 }
+
+
+
 
 /*Animations*/
 
