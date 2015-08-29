@@ -6,25 +6,26 @@ angular.module('payment-App.payments',['ngAutocomplete', 'ngFx', 'ngAnimate'])
     $scope.address;
     $scope.payees = [];
     $scope.people = [];
-
-
+    
 })
   
-  .directive("ngFinder", function(){
+  .directive("ngFinder", function() {
   return {
     restrict: "A",
     templateUrl: 'templates/finder.html',
     scope: {
       payees: '=ngPayees',
-      people: '=ngPeople'
+      people: '=ngPeople',
     },
 
     //look up link property of directives args
     link: function($scope, el, attributes) {
 
-    //was not accessible in controller (why?????)
-    $scope.isBusiness = true;
+    console.log(google.maps)
 
+    if ($scope.isBusiness === undefined) {
+      $scope.isBusiness = true;
+    };
 
     $scope.newPayee = function () {
       this.businessID = $scope.businessID;
