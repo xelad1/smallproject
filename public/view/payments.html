@@ -20,9 +20,43 @@
     </div>
   </div> -->
 
+
+
   <div data-ng-finder data-ng-payees="payees" data-ng-people="people"></div>
 
-  <div ng-repeat="payee in payees" my-payee="payee" class="animated fadeInLeft">
+  <div ng-repeat="payee in payees" my-payee="payee" class="animated fadeInLeft tile-container">
+    <div class="tile">
+      <span class="user-pic">
+        <p><img class="ui left floated image unique" src="http://s12.postimg.org/6dr9zbq09/Untitled.png" id="image"></p>
+      </span>
+      <span class="content">
+        <div class="column address" id="textbox">
+          <div class="noborder ui segment vert"><h2>{{payee.businessID}}</h2>
+          <span class="address" id="address">{{payee.address}}</span></div>
+        </div>
+      </span>
+      <span class="tool-tip">
+        <a href="#" tooltips tooltip-title="Click to Pay!">
+          <font class="dollar" color="white" height="39.47" width="18.75">$</font>
+      </span>
+    </div>
+  </div>
+
+  <div ng-repeat="people in people" my-payee="people" class="animated fadeInLeft tile-container">
+    <div class="tile">
+      <span class="user-pic">
+        <p><img class="ui right floated image unique" src="http://slco.org/recreation/dimpledell/youthSports/images/football_large.jpg" id="image"></p>
+      </span>
+      <span class="content">
+       <div class="column address" id="textbox">        
+          <div class="noborder ui segment vert"><h2>{{people.businessID}}</h2>
+          <span class="address" id="address">Address not provided</span></div>
+        </div>
+      </span>
+      <span class="tool-tip"></span>
+    </div>
+  </div>
+<!--   <div ng-repeat="payee in payees" my-payee="payee" class="animated fadeInLeft">
     <div class="ui two column stackable grid" id="grid">
       <div class="three column row payment">
         <div class="column">
@@ -45,9 +79,9 @@
         </div>
       </div>
     </div>  
-  </div>
+  </div> -->
 
-  <div ng-repeat="people in people" my-payee="people" class="animated fadeInLeft">
+<!--   <div ng-repeat="people in people" my-payee="people" class="animated fadeInLeft">
     <div class="ui two column stackable grid" id="grid">
       <div class="three column row payment">
         <div class="column">
@@ -66,6 +100,6 @@
       </div>
     </div>  
   </div>
-</div>
+</div> -->
 
 </section>
