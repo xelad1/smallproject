@@ -6,7 +6,7 @@ angular.module('payment-App.payments',['ngAutocomplete', 'ngFx', 'ngAnimate'])
     $scope.address;
     $scope.payees = [];
     $scope.people = [];
-    
+
 })
   
   .directive("ngFinder", function() {
@@ -51,14 +51,14 @@ angular.module('payment-App.payments',['ngAutocomplete', 'ngFx', 'ngAnimate'])
 
     $scope.selectBusiness = function () {
       $scope.isBusiness = true;
-      document.getElementById("selectPerson").className = "left attached ui button submit";
-      document.getElementById("selectBusiness").className = "left attached blue ui button submit";
+      document.getElementById("selectPerson").className = "personButton";
+      document.getElementById("selectBusiness").className = "businessButton";
     }
 
     $scope.selectPerson = function () {
       $scope.isBusiness = false;
-      document.getElementById("selectBusiness").className = "left attached ui button submit";
-      document.getElementById("selectPerson").className = "left attached blue ui button submit"; 
+      document.getElementById("selectBusiness").className = "businessButtonInverted";
+      document.getElementById("selectPerson").className = "personButtonInverted"; 
     }
 
   }
