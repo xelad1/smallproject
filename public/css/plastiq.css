@@ -8,10 +8,9 @@
  }
 
 
-#input {
-  position: relative;
-  width: 950px;
-}
+/*#input {
+  
+}*/
 
 #arrow {
   position: relative;
@@ -138,7 +137,7 @@ div.three.column.row.payment {
   flex: 1 0 auto;
   background-color: yellow;
   word-wrap: break-word;
-  max-width: 600px;
+  max-width: 812px;
   width: 100px;
 }
 
@@ -185,6 +184,16 @@ div.three.column.row.payment {
   background-color: #eeeeee;
   color: #aaaaaa;
   border: none;
+}
+
+.ui.input input {
+  position: relative;
+  width: 950px;
+  border-radius: 0px !important;
+  font-family: arial !important;
+  font-size: 12pt;
+  font-weight: bold;
+
 }
 
 /*Animations*/
