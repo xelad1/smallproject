@@ -67,6 +67,7 @@
 .noborder {
   border: 0 !important;
   box-shadow: none !important;
+  padding-bottom: 10px !important;
 }
 
 .address {
@@ -75,6 +76,8 @@
 
 #address {
   color: #D0D0D0;
+  font-family: museo-slab;
+  font-weight: 300;
 }
 
 .submit {
@@ -90,11 +93,19 @@
 h2 {
   height: 15px !important;
   font-family: museo-slab !important;
+  color: #282b2d !important;
+  font-weight: 700 !important;
 }
 
 .ui.grid>.column:not(.row), .ui.grid>.row>.column {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
+}
+
+div.noborder.ui.segment.vert {
+  padding-top: 7px;
+  padding-left: 23px;
+  padding-right: 14px;
 }
 
 div.three.column.row.payment {
@@ -253,6 +264,10 @@ div.three.column.row.payment {
 
 }
 
+.tooltipStyle {
+  font-size: 12pt;
+  font-family: arial;
+}
 /*Animations*/
 
 /*.fadein,

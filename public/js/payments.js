@@ -21,8 +21,6 @@ angular.module('payment-App.payments',['ngAutocomplete', 'ngFx', 'ngAnimate'])
     //look up link property of directives args
     link: function($scope, el, attributes) {
 
-    console.log(google.maps)
-
     if ($scope.isBusiness === undefined) {
       $scope.isBusiness = true;
     };
