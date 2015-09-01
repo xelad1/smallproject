@@ -18,7 +18,6 @@ angular.module('payment-App.payments',['myCustom', 'ngFx', 'ngAnimate'])
       people: '=ngPeople',
     },
 
-    //look up link property of directives args
     link: function($scope, el, attributes) {
 
     if ($scope.isBusiness === undefined) {
@@ -60,15 +59,7 @@ angular.module('payment-App.payments',['myCustom', 'ngFx', 'ngAnimate'])
     }
 
   }
-    
-
-
 
   }
 })
-
-//Notes:
-//Make pixel perfect to psd (use Photoshop here)
-//Add in proper fonts
-//Write custom angular autocomplete directive
 
