@@ -35,7 +35,6 @@ angular.module('payment-App.payments',['myCustom', 'ngFx', 'ngAnimate'])
       $scope.businessID = text[0];
       $scope.address = text.slice(1).join("");
       $scope.newPayee();
-      angular.element('.pac-container').append('<div></div>');
     }
 
     

@@ -191,11 +191,6 @@ div.three.column.row.payment {
   color: #aaaaaa;
 }
 
-
-.arrow {
-  z-index: 1;
-}
-
 /*Button Styling*/
 
 .businessButton {
@@ -274,18 +269,11 @@ div.three.column.row.payment {
   /*content: "<div>SOMETHING</div>";*/
 }
 
-.hdpi.pac-logo:after {
-  
-}
 
 .pac-container::after {
   content: url("http://s12.postimg.org/wf5eu7kql/custombar.png");
   height: 35px !important;
   background-color: #f6f6f6;
-  color: #f6f6f6;
-  border-bottom-left-radius: 4px !important;
-  border-bottom-right-radius: 4px !important;
-  /*background-image: url("http://s12.postimg.org/wf5eu7kql/custombar.png") !important;*/
 }
 
 /*.pac-container:after {
@@ -301,60 +289,8 @@ div.three.column.row.payment {
   display: block;
 }*/
 
-
-
-http://s12.postimg.org/wf5eu7kql/custombar.png
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   display: block;
 
-}
 
 
 .pac-item {
@@ -362,16 +298,18 @@ http://s12.postimg.org/wf5eu7kql/custombar.png
   width: 428px;
   height: 83px;
   float: left;
+  padding-top: 30px;
   padding-left: 30px;
-  padding-top: 20px;
+  line-height: 1px !important;
 }
 
 .pac-item-query {
   font-family: arial;
-  font-size: 15pt;
+  font-size: 12pt;
   /*color: blue;*/
   display: inline;
-  padding: -100px !important;
+  line-height: 0px !important;
+  margin-bottom: -100px !important;
 }
 
 .pac-item-query:after {
