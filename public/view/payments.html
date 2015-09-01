@@ -5,24 +5,7 @@
 
 <div>
   
-  <!-- <div class="ui center aligned grid" id="navbar">
-    <div class="bar">
-    <div class="something">
-      <div class="ui input" ng-keypress="submit()" id="input">
-        <button class="left attached blue ui button submit" ng-click="selectBusiness(); disabled = !disabled" id="selectBusiness">Business</button>
-        <button class="left attached ui button submit" ng-click="selectPerson(); disabled = !disabled" id="selectPerson">Person</button>
-        <input ng-if="!disabled" id="businessID" type="text" ng-autocomplete ng-model="autocomplete" placeholder="What business do you want to pay?">
-        <input ng-if="disabled" id="businessID" type="text" ng-model="autocomplete" placeholder="Who do you want to pay?">
-        <button class="right attached blue ui button" id="submit" ng-click="addPayee()">
-          <i class="arrow right icon arrow"></i>
-      </div>
-    </div>
-    </div>
-  </div> -->
-
-
-
-  <div data-ng-finder data-ng-payees="payees" data-ng-people="people"></div>
+    <div data-ng-finder data-ng-payees="payees" data-ng-people="people"></div>
 
   <div ng-repeat="payee in payees" my-payee="payee" class="animated fadeInLeft tile-container">
     <div class="tile">
@@ -35,10 +18,11 @@
           <span class="address" id="address">{{payee.address}}</span></div>
         </div>
       </span>
-      <span class="tool-tip">
-        <a href="#" tooltips tooltip-class="tooltipStyle" tooltip-title="Make a Payment!">
-          <font class="dollar" color="white">$</font>
-      </span>
+      <a href=# tooltips tooltip-title="Make a Payment!" class="tool-tip">
+        <span>
+            <font class="dollar" title="Make a Payment" color="white">$</font>
+        </span>
+      </a>
     </div>
   </div>
 
@@ -53,53 +37,8 @@
           <span class="address" id="address">Address not provided</span></div>
         </div>
       </span>
-      <!-- <span class="tool-tip"></span> -->
     </div>
   </div>
-<!--   <div ng-repeat="payee in payees" my-payee="payee" class="animated fadeInLeft">
-    <div class="ui two column stackable grid" id="grid">
-      <div class="three column row payment">
-        <div class="column">
-          <div class="noborder ui segment">
-            <img class="ui right floated image unique" src="http://slco.org/recreation/dimpledell/youthSports/images/football_large.jpg" id="image">
-          </div>
-        </div>
-        <div class="column address" id="textbox">
-          <div class="noborder ui segment vert"><h2>{{payee.businessID}}</h2>
-          <span class="address" id="address">{{payee.address}}</span></div>
-        </div>
-        <div class="column">
-          <div class="noborder ui segment">
-              <button class="right attached ui icon button hoverbox">
-                <a href="#" tooltips tooltip-title="Click to Pay!">
-                  <i class=>$</i>
-                </a>
-              </button>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div> -->
 
-<!--   <div ng-repeat="people in people" my-payee="people" class="animated fadeInLeft">
-    <div class="ui two column stackable grid" id="grid">
-      <div class="three column row payment">
-        <div class="column">
-          <div class="noborder ui segment">
-            <img class="ui right floated image unique" src="http://slco.org/recreation/dimpledell/youthSports/images/football_large.jpg" id="image">
-          </div>
-        </div>
-        <div class="column address" id="textbox">        
-          <div class="noborder ui segment vert"><h2>{{people.businessID}}</h2>
-          <span class="address" id="address">Address not provided</span></div>
-        </div>
-        <div class="column">
-          <div class="noborder ui segment">
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
-</div> -->
 
 </section>

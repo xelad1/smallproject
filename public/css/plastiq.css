@@ -159,6 +159,15 @@ div.three.column.row.payment {
   box-shadow: 1px 1px 1px grey;
 }
 
+.content2 {
+  flex: 1 0 auto;
+  background-color: white;
+  word-wrap: break-word;
+  max-width: 812px;
+  width: 100px;
+  box-shadow: 1px 1px 1px grey;
+}
+
 .tool-tip {
   background: white;
   display: flex;
