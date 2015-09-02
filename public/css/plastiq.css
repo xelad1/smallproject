@@ -261,9 +261,11 @@ div.three.column.row.payment {
 
 
 .pac-container::after {
-  content: url("http://s12.postimg.org/wf5eu7kql/custombar.png");
+  content: url("http://s10.postimg.org/uq360w9xl/updatedicon.png");
+  text-align: center;
   height: 35px !important;
   background-color: #f6f6f6;
+  
 }
 
 display: block;
