@@ -53,6 +53,8 @@
   height: 45px;
   background-color: #00a1e1;
   color: white;
+  padding-left: 1px;
+  padding-top: 0px;
 }
 
 .noborder {
@@ -265,7 +267,7 @@ div.three.column.row.payment {
   text-align: center;
   height: 35px !important;
   background-color: #f6f6f6;
-  
+
 }
 
 display: block;
@@ -306,32 +308,3 @@ display: block;
   height: 0px;
 }
 
-/*h4 {
-    display:inline;
-}
-h4:after {
-    content:"\a";
-    white-space: pre;
-}*/
-/*Animations*/
-
-/*.fadein,
-.fadeout {
-  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s !important;
-  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s !important;
-  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s !important;
-  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s !important;
-}
-
-.fadein.ng-hide-remove,
-.fadeout.ng-hide-add.ng-hide-add-active {
-  opacity: 0 !important;
-  display: block !important;
-}
-
-.fadeout.ng-hide-add,
-.fadein.ng-hide-remove.ng-hide-remove-active {
-  opacity: 1 !important;
-  display: block !important;
-}
-*/
