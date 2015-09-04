@@ -302,6 +302,10 @@ display: block;
   height: 0px;
 }
 
+.pac-item-selected {
+  background-color: #f6f6f6;
+}
+
 .pac-item-selected .pac-item-query {
   color: #00a1e1;
 }
