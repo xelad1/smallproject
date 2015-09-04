@@ -11,8 +11,7 @@
   position: relative;
 }
 
-#payee
- {
+#payee {
   position: relative;
   top: 180px;
   right: -538px;
@@ -267,7 +266,6 @@ div.three.column.row.payment {
   text-align: center;
   height: 35px !important;
   background-color: #f6f6f6;
-
 }
 
 display: block;
@@ -285,7 +283,6 @@ display: block;
 .pac-item-query {
   font-family: arial;
   font-size: 12pt;
-  /*color: blue;*/
   display: inline;
   line-height: 0px !important;
   margin-bottom: -100px !important;
@@ -296,9 +293,6 @@ display: block;
   white-space: pre;
 }
 
-.pac-item-query-selected {
-  font-color: blue;
-}
 
 .pac-icon {
   opacity: 0;
@@ -307,4 +301,12 @@ display: block;
   width: 0px;
   height: 0px;
 }
+
+.pac-item-selected .pac-item-query {
+  color: #00a1e1;
+}
+
+
+
+
 
