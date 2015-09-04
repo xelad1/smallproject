@@ -256,16 +256,22 @@ div.three.column.row.payment {
 
 /*Google Autocomplete Styling*/
 
+.pac-container.pac-logo {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
 .pac-container {
   width: 428px !important;
 }
-
 
 .pac-container::after {
   content: url("http://s10.postimg.org/uq360w9xl/updatedicon.png");
   text-align: center;
   height: 35px !important;
   background-color: #f6f6f6;
+  border-radius: 10px !important;
 }
 
 display: block;
@@ -291,6 +297,7 @@ display: block;
 .pac-item-query:after {
   content: "\a";
   white-space: pre;
+
 }
 
 
@@ -309,6 +316,7 @@ display: block;
 .pac-item-selected .pac-item-query {
   color: #00a1e1;
 }
+
 
 
 
