@@ -3,9 +3,9 @@
   padding-top: 57px;
  }
 
- body {
-  background: #fbfbfb !important;
- }
+body {
+  background: linear-gradient(to bottom left, #fbfbfb, #fcfcfc , #fdfdfd) !important;
+}
 
 #arrow {
   position: relative;
@@ -299,7 +299,6 @@ display: block;
   white-space: pre;
 
 }
-
 
 .pac-icon {
   opacity: 0;
